@@ -1,1 +1,1 @@
-# CABAAG - Personal site
+# SWPachuca - Startup Weekend Pachuca website
