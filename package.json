@@ -13,6 +13,7 @@
   "scripts": {
     "build": "NODE_ENV=production npm run webpack",
     "clean": "rimraf $npm_package_config_buildDir && mkdir $npm_package_config_buildDir",
+    "deploy": "npm run build && git add . && git commit -m process.env.MESSAGE && git push heroku master",
     "env": "env",
     "lint": "eslint --ext .js --ext .jsx ./app ./webpack && echo No linting errors.",
     "prebuild": "npm run clean",
