@@ -1,0 +1,54 @@
+@import '../../scss/variables/_colors.scss';
+
+main {
+  display: flex;
+  height: calc(100vh - 64px);
+  padding-top: 64px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  .overlay {
+    position: absolute;
+    background: rgba($primary-color, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .background {
+    background-image: url("../../assets/imgs/pachuca.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
+.front {
+  width: 100%;
+  z-index: 10;
+  .title {
+    color: white;
+  }
+  .tgsw {
+    width: 200px;
+  }
+}

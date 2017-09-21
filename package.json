@@ -1,8 +1,7 @@
 {
-  "name": "cabaag",
+  "name": "swpachuca",
   "version": "0.0.0",
-  "description": "Pagina personal",
-  "repository": "cabaag/cabaag",
+  "description": "Startup Weekend Pachuca 2017",
   "license": "MIT",
   "config": {
     "buildDir": "./build",
@@ -76,7 +75,7 @@
     "node-sass": "^3.2.0",
     "opn": "^3.0.2",
     "phantomjs": "^1.9.17",
-    "postcss-loader": "^0.5.1",
+    "postcss-loader": "^1.0.0",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^1.2.8",
     "rimraf": "^2.4.2",

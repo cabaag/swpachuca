@@ -1,0 +1,48 @@
+@import '../../scss/variables/_colors.scss';
+
+.partnersWrapper {
+  color: $foreground-color;
+  background-color: $background-color;
+  .title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .partners {
+    justify-content: center;
+    .partner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 10px;
+      img {
+        filter: grayscale(100%);
+        width: auto;
+        height: 80px;
+        transition: filter 300ms ease;
+        @media screen and (min-width: 1025px) {
+          cursor: pointer;
+        }
+      }
+      img:hover {
+        filter: grayscale(0);
+      }
+      @media screen and (max-width: 600px) {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .footNote {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+    .email a{
+      color: currentColor;
+      text-decoration: none;
+    }
+  }
+}

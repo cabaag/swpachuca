@@ -1,0 +1,27 @@
+@import '../../scss/variables/_colors.scss';
+
+footer {
+  background: $primary-color;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charly {
+  height: 50px;
+  display: flex;
+  color: $background-color;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  a {
+    margin-left: 15px;
+    color: $background-color;
+    width: auto;
+    img {
+      height: 30px;
+      font-family: sans-serif;
+    }
+  }
+}

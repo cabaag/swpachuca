@@ -1,0 +1,31 @@
+@import '../../scss/variables/_colors.scss';
+
+.schedule {
+  min-height: 200px;
+  background: $foreground-color;
+  color: $background-color;
+  .title {
+    margin: 0;
+  }
+}
+
+.dayWrapper {
+  .dayTitle {
+    // transition: background-color 350ms ease;
+  }
+  .dayTitleActive {
+    background-color: $primary-color;
+    color: $background-color;
+    transition: background-color 350ms ease;
+    button svg {
+      color: $background-color !important;
+    }
+  }
+  .activity {
+    margin: 10px 0;
+    .time {
+      font-weight: bold;
+    }
+  }
+
+}

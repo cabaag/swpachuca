@@ -1,0 +1,29 @@
+
+/* app.scss */
+
+@import "toolkit";
+@import "variables";
+@import "fonts";
+@import "base";
+
+* {
+  font-family: Montserrat;
+}
+
+section {
+  position: relative;
+  min-height: 600px;
+  width: 100%;
+  padding: 50px 0;
+  margin: 0 !important;
+  color: $foreground-color;
+  background: $background-color;
+  box-sizing: border-box;
+  @media (max-width: 1024px) {
+    min-height: 70vh;
+  }
+}
+section.odd {
+  background: $foreground-color;
+  color: $background-color;
+}
