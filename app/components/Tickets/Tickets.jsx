@@ -4,7 +4,10 @@ import React from 'react';
 import '../../assets/imgs/sw-hero-home.png';
 
 export default class Tickets extends React.Component {
+
   render() {
+    let height
+
     let Tickets = (
       <div>
         <section id="tickets" className={styles.odd}>
@@ -16,8 +19,14 @@ export default class Tickets extends React.Component {
                 </h1>
                 <h4>Adquiere tus boletos y participa en este grandioso evento.</h4>
               </div>
-              <div className={'col-xs-12 ' + styles.soon}>
-                PRÓXIMAMENTE
+              <div className='col-xs-12 col-lg-6'>
+                <div style={{ width: '100%', textAlign: 'left'}}>
+                  <iframe src="//eventbrite.com/tickets-external?eid=37624992365&ref=etckt" 
+                  frameBorder="0" height="900px" width="100%" marginHeight="5" marginWidth="5" scrolling="auto" allowTransparency="true"></iframe>
+                  <div style={{fontFamily:'Helvetica, Arial', fontSize:12, padding: '10px 0 5px', margin: '2 80px', textAlign: 'left'}} >
+                    <a className="powered-by-eb" style={{color: '#ADB0B6', textDecoration: 'none'}} target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

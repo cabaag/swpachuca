@@ -18,7 +18,6 @@ export default class Body extends React.Component {
         <SWP/>
         <Venue />
         <Community />
-        <Mentores />
         <Partners />
         <Schedule />
         <Tickets />

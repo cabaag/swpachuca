@@ -55,37 +55,19 @@ export default class Partners extends React.Component {
   render() {
     let Partners = (
       <section id="partners" className={styles.partnersWrapper + ' container-fluid'}>
-        <div className="row center-xs">
+        <div className="row center-xs middle-xs">
           <div className="col-xs-12">
             <div className={styles.title}> Patrocinadores </div>
           </div>
-          <div className="col-xs-12">
-            <h2>Globales</h2>
-          </div>
           { this.renderPartners(globalPartners) }
-          <div className="col-xs-12">
-            <h2>Platinum</h2>
-          </div>
           {
-            platinumPartners.length > 0 
-              ? this.renderPartners(platinumPartners) 
-              : <h4 className="col-xs-12"> Sé un patrocinador PLATINUM </h4>
+            platinumPartners.length > 0  ? this.renderPartners(platinumPartners)  : null
           }
-          <div className="col-xs-12">
-            <h2>Gold</h2>
-          </div>
           {
-            goldPartners.length > 0 
-              ? this.renderPartners(goldPartners) 
-              : <h4 className="col-xs-12"> Sé un patrocinador GOLD </h4>
+            goldPartners.length > 0  ? this.renderPartners(goldPartners)  : null
           }
-          <div className="col-xs-12">
-            <h2>Silver</h2>
-          </div>
           { 
-            silverPartners.length > 0 
-              ? this.renderPartners(silverPartners) 
-              : <h4 className="col-xs-12"> Sé un patrocinador SILVER </h4>
+            silverPartners.length > 0  ? this.renderPartners(silverPartners)  : null
           }
           <div className={'col-xs-12 col-sm-10 ' + styles.footNote}> 
             Si deseas ser patrocinador del SWPachuca, por favor 

@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
             <div className="col-xs-2 end-xs">
               <div className={styles.socials}>
                 <IconButton 
-                href={'https://www.facebook.com/'} 
+                href={'https://www.facebook.com/PachucaStartupWeekend/'} 
                 target="_blank"
                 className={styles.social}>
                   <Facebook color="#fff"/>

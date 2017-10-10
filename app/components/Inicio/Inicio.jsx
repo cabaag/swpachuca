@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './_Inicio.scss';
 import {
-  FlatButton
+  FlatButton,
+  IconButton
 } from 'material-ui';
 
 import '../../assets/imgs/tgsw.png';
 import '../../assets/imgs/TGSW_2017.png';
+
+import Facebook from 'mui-icons/fontawesome/facebook';
 
 const links = [{
     title: 'SWP',
@@ -53,6 +56,16 @@ export default class Inicio extends React.Component {
                   (<FlatButton label={link.title} className={styles.buttonNav} onTouchTap={() => (this.handleScrollTo(link.link)) } key={link.title} />)
                 )
               }
+            </div>
+            <div className="col-xs-12 center-xs">
+              <div className={styles.socials}>
+                <IconButton 
+                href={'https://www.facebook.com/PachucaStartupWeekend/'} 
+                target="_blank"
+                className={styles.social}>
+                  <Facebook color="#fff"/>
+                </IconButton>
+              </div>
             </div>
             <div className="row col-xs-12 end-xs">
               <div>
