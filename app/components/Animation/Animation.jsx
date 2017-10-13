@@ -55,7 +55,7 @@ export default class Animation extends React.Component {
       frameIndex: 0,
       tickCount: 0,
       timeCount: 0,
-      ticksPerFrame: 4,
+      ticksPerFrame: 2,
       numberOfFrames: options.numberOfFrames || 1,
       render: function () {
         that.context.clearRect(0, 0, that.width, that.height);
@@ -89,7 +89,7 @@ export default class Animation extends React.Component {
 
   render() {
     let Animation = (
-      <div style={{width: '100%'}}>
+      <div style={{width: '100%'}} className={styles.animation}>
         <canvas id={this.props.id}></canvas>
       </div>
     );

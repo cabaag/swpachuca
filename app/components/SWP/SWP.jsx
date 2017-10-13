@@ -41,22 +41,22 @@ export default class SWP extends React.Component {
                 <h2 className="col-xs-12"> Perfiles clave </h2>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
                   <Animation src="../../assets/imgs/designer.png" 
-                    frames={9} width={900} height={203} id="designer" interval={500}/>
+                    frames={9} width={1116} height={250} id="designer" interval={500}/>
                   <span>Diseñador</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
                 <Animation src="../../assets/imgs/developer.png" 
-                    frames={7} width={700} height={203} id="developer" interval={320}/>
+                    frames={14} width={1736} height={250} id="developer" interval={320}/>
                   <span>Developer</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
                   <Animation src="../../assets/imgs/business.png" 
-                    frames={11} width={1100} height={203} id="business" interval={400}/>
+                    frames={17} width={2108} height={250} id="business" interval={400}/>
                   <span>Business</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
                   <Animation src="../../assets/imgs/expert.png" 
-                    frames={1} width={100} height={203} id="expert" interval={100000}/>
+                    frames={16} width={1984} height={250} id="expert" interval={10}/>
                   <span>Experto</span>
                 </div>
               </div>
