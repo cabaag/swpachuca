@@ -139,7 +139,7 @@ export default class Header extends React.Component {
             </div>
             {
               links.map((link) => 
-                ( <MenuItem onTouchTap={()=> this.handleScrollTo(link.link)} key={link.title}> {link.title} </MenuItem> )
+                ( <MenuItem onTouchTap={()=> this.handleScrollTo(link.link)} key={link.title} style={{color:'white'}}> {link.title} </MenuItem> )
               )
             }
           </div>

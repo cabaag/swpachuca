@@ -70,11 +70,11 @@ export default class Venue extends React.Component {
     let Venue = (
       <section id="venue" className={styles.odd}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row center-xs">
             <div className={'col-xs-12 center-xs ' + styles.title}>
               Venue
             </div>
-            <div className={'col-xs-12 col-sm-6 center-xs row ' + styles.desc}>
+            <div className={'col-xs-12 col-sm-6 col-lg-4 center-xs row ' + styles.desc}>
               <h2>Centro de Negocios Pachuca</h2>
               <div className="col-xs-12 col-sm-8 center-xs">
                 Es la sede donde se realizará el SWPachuca, dentro del mismo
@@ -83,7 +83,7 @@ export default class Venue extends React.Component {
                 evento.
               </div>
             </div>
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6 col-lg-4">
               <Card  className={styles.map} containerStyle={{height: '100%'}}>
                 <div id="map" style={{height: '100%'}}></div>
               </Card>

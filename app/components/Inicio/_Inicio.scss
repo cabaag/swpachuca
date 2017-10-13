@@ -7,6 +7,10 @@ main {
   position: relative;
   overflow: hidden;
   @media (max-width: 767px) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  @media (max-width: 767px) {
     flex-direction: column;
   }
   img {
@@ -48,7 +52,18 @@ main {
   .title {
     color: white;
   }
+  .countdown {
+    color: white;
+  }
   .tgsw {
     width: 200px;
+  }
+}
+
+.messenger {
+  margin-right: 20px;
+  @media screen and (max-width:600px) {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }

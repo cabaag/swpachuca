@@ -9,16 +9,20 @@ import '../../assets/partners/google.png';
 
 const globalPartners = [{
   img: '../../assets/partners/coca-cola.png',
-  name: "Coca-Cola"
+  name: "Coca-Cola",
+  url: 'http://www.coca-cola.com.mx'
 }, {
   img: '../../assets/partners/dotCO.png',
-  name: ".CO"
+  name: ".CO",
+  url: 'http://www.go.co/'
 }, {
   img: '../../assets/partners/eventbrite.png',
-  name: "Eventbrite"
+  name: "Eventbrite",
+  url: 'http://www.eventbrite.es'
 }, {
   img: '../../assets/partners/google.png',
-  name: "Google"
+  name: "Google",
+  url: 'https://www.googleforentrepreneurs.com/'
 }];
 
 // Platinum
@@ -27,10 +31,12 @@ import '../../assets/partners/platinum/stickergiant.svg';
 
 const platinumPartners = [{
   img: '../../assets/partners/platinum/gruvel.png',
-  name: "Gruvel"
+  name: "Gruvel",
+  url: 'https://www.gruvel.mx'
 }, {
   img: '../../assets/partners/platinum/stickergiant.svg',
-  name: "Sticker Giant"
+  name: "Sticker Giant",
+  url: 'https://www.stickergiant.com/'
 }]
 
 // Gold
@@ -41,12 +47,12 @@ const silverPartners = [];
 
 export default class Partners extends React.Component {
   renderPartners(partners) {
-    return <div className={'row col-xs-12 col-sm-10 ' + styles.partners}>
+    return <div className={'row col-xs-12 col-sm-10 col-lg-8 ' + styles.partners}>
     {
       partners.map(partner => (
-        <div className={'col-xs-6 col-sm-4 col-md-3 ' + styles.partner} key={partner.name}>
+        <a className={'col-xs-6 col-sm-4 col-md-3 ' + styles.partner} key={partner.name} href={partner.url} target="_blank">
           <img src={partner.img} alt={partner.name} />
-        </div>
+        </a>
       ))
     }
     </div>
@@ -69,7 +75,7 @@ export default class Partners extends React.Component {
           { 
             silverPartners.length > 0  ? this.renderPartners(silverPartners)  : null
           }
-          <div className={'col-xs-12 col-sm-10 ' + styles.footNote}> 
+          <div className={'col-xs-12 col-sm-10 col-lg-8 ' + styles.footNote}> 
             Si deseas ser patrocinador del SWPachuca, por favor 
             comunicate al siguiente correo:&nbsp;
             <b className={styles.email}>

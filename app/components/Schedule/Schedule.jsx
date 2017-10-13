@@ -65,7 +65,7 @@ export default class Schedule extends React.Component {
             </h1>
           </div>
           <div className='row center-xs middle-xs'>
-            <div className='col-xs-12 col-sm-10 col-md-8 schedule-wrapper'>
+            <div className='col-xs-12 col-sm-10 col-md-8 col-lg-7 schedule-wrapper'>
               {scheduleRender}
             </div>
           </div>

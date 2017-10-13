@@ -1,6 +1,8 @@
 import styles from './_SWP.scss';
 import React from 'react';
 
+import Animation from '../Animation/Animation';
+
 import '../../assets/imgs/beaker_green.png';
 import '../../assets/imgs/designer.png';
 import '../../assets/imgs/developer.png';
@@ -38,19 +40,23 @@ export default class SWP extends React.Component {
               <div className="row">
                 <h2 className="col-xs-12"> Perfiles clave </h2>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
-                  <img src="../../assets/imgs/designer.png" alt="Designer" />
+                  <Animation src="../../assets/imgs/designer.png" 
+                    frames={9} width={900} height={203} id="designer" interval={500}/>
                   <span>Diseñador</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
-                  <img src="../../assets/imgs/developer.png" alt="Developer" />
+                <Animation src="../../assets/imgs/developer.png" 
+                    frames={7} width={700} height={203} id="developer" interval={320}/>
                   <span>Developer</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
-                  <img src="../../assets/imgs/business.png" alt="Business" />
+                  <Animation src="../../assets/imgs/business.png" 
+                    frames={11} width={1100} height={203} id="business" interval={400}/>
                   <span>Business</span>
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
-                  <img src="../../assets/imgs/expert.png" alt="Expert" />
+                  <Animation src="../../assets/imgs/expert.png" 
+                    frames={1} width={100} height={203} id="expert" interval={100000}/>
                   <span>Experto</span>
                 </div>
               </div>
