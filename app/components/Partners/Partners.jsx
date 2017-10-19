@@ -9,34 +9,44 @@ import '../../assets/partners/google.png';
 
 const globalPartners = [{
   img: '../../assets/partners/coca-cola.png',
-  name: "Coca-Cola",
+  name: 'Coca-Cola',
   url: 'http://www.coca-cola.com.mx'
 }, {
   img: '../../assets/partners/dotCO.png',
-  name: ".CO",
+  name: '.CO',
   url: 'http://www.go.co/'
 }, {
   img: '../../assets/partners/eventbrite.png',
-  name: "Eventbrite",
+  name: 'Eventbrite',
   url: 'http://www.eventbrite.es'
 }, {
   img: '../../assets/partners/google.png',
-  name: "Google",
+  name: 'Google',
   url: 'https://www.googleforentrepreneurs.com/'
 }];
 
 // Platinum
-import '../../assets/partners/platinum/gruvel.png';
+import '../../assets/partners/platinum/gruvel.svg';
 import '../../assets/partners/platinum/stickergiant.svg';
+import '../../assets/partners/platinum/tapai.png';
+import '../../assets/partners/platinum/yunop.png';
 
 const platinumPartners = [{
-  img: '../../assets/partners/platinum/gruvel.png',
-  name: "Gruvel",
+  img: '../../assets/partners/platinum/gruvel.svg',
+  name: 'Gruvel',
   url: 'https://www.gruvel.mx'
 }, {
   img: '../../assets/partners/platinum/stickergiant.svg',
-  name: "Sticker Giant",
+  name: 'Sticker Giant',
   url: 'https://www.stickergiant.com/'
+}, {
+  img: '../../assets/partners/platinum/tapai.png',
+  name: 'Tapai',
+  url: 'https://www.facebook.com/tapai.cow'
+}, {
+  img: '../../assets/partners/platinum/yunop.png',
+  name: 'Yunop',
+  url: 'https://www.facebook.com/Yunop.im'
 }]
 
 // Gold
@@ -50,7 +60,7 @@ export default class Partners extends React.Component {
     return <div className={'row col-xs-12 col-sm-10 col-lg-8 ' + styles.partners}>
     {
       partners.map(partner => (
-        <a className={'col-xs-6 col-sm-4 col-md-3 ' + styles.partner} key={partner.name} href={partner.url} target="_blank">
+        <a className={'col-xs-6 col-sm-4 col-md-3 ' + styles.partner} key={partner.name} href={partner.url} target='_blank'>
           <img src={partner.img} alt={partner.name} />
         </a>
       ))
@@ -60,9 +70,9 @@ export default class Partners extends React.Component {
 
   render() {
     let Partners = (
-      <section id="partners" className={styles.partnersWrapper + ' container-fluid'}>
-        <div className="row center-xs middle-xs">
-          <div className="col-xs-12">
+      <section id='partners' className={styles.partnersWrapper + ' container-fluid'}>
+        <div className='row center-xs middle-xs'>
+          <div className='col-xs-12'>
             <div className={styles.title}> Patrocinadores </div>
           </div>
           { this.renderPartners(globalPartners) }
@@ -79,7 +89,7 @@ export default class Partners extends React.Component {
             Si deseas ser patrocinador del SWPachuca, por favor 
             comunicate al siguiente correo:&nbsp;
             <b className={styles.email}>
-              <a href="mailto:kevindeclemente93@gmail.com" target="_blank">kevindeclemente93@gmail.com</a>
+              <a href='mailto:kevindeclemente93@gmail.com' target='_blank'>kevindeclemente93@gmail.com</a>
             </b>
           </div>
         </div>

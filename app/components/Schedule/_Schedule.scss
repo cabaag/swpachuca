@@ -7,6 +7,16 @@
   .title {
     margin: 0;
   }
+  .googleCalendar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 600px){
+      position: relative;
+      transform: none;
+    }
+  }
 }
 
 .dayWrapper {

@@ -1,6 +1,10 @@
 import styles from './_Schedule.scss';
 import React from 'react';
-import {Card, CardHeader, CardText} from 'material-ui/Card';
+import {
+  Card,
+  CardHeader,
+  CardText
+} from 'material-ui/Card';
 
 import days from './days';
 
@@ -11,12 +15,16 @@ export default class Schedule extends React.Component {
       expandedDay: 1,
     };
   }
-  
+
   handleExpandChange = (index) => {
     if (index === this.state.expandedDay) {
-      this.setState({expandedDay: 0});
+      this.setState({
+        expandedDay: 0
+      });
     } else {
-      this.setState({expandedDay: index});
+      this.setState({
+        expandedDay: index
+      });
     }
   };
 
@@ -60,9 +68,14 @@ export default class Schedule extends React.Component {
       <section id="schedule" className={styles.schedule}>
         <div className="container-fluid">
           <div className='row center-xs middle-xs'>
-            <h1 className={'col-xs-12' + styles.title}>
-              Calendario
-            </h1>
+            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-7 row middle-xs around-xs center-sm" style={{position: 'relative'}}>
+              <h1 className={'col-xs-12' + styles.title}>
+                Calendario
+              </h1>
+              <a className={styles.googleCalendar} target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MGJrbHA5NmhwMzRta2c2cmlucjg1M3V1YmUgY2FiYTkzMTNAbQ&amp;tmsrc=caba9313%40gmail.com">
+                <img src="https://www.google.com/calendar/images/ext/gc_button1_es.gif" />
+              </a>
+            </div>
           </div>
           <div className='row center-xs middle-xs'>
             <div className='col-xs-12 col-sm-10 col-md-8 col-lg-7 schedule-wrapper'>

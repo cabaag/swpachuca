@@ -32,8 +32,8 @@ export default class SWP extends React.Component {
                     <span className={styles.sw}>Startup Weekend </span>
                     es un evento intenso de 54 horas en el que emprendedores de varios perfiles 
                     (principalmente desarrolladores de software, diseñadores gráficos y gente de negocios) 
-                    se reunen en equipos alrededor de una idea para convertirla en realidad y crear una 
-                    empresa en internet.
+                    se reúnen en equipos alrededor de una idea para convertirla en realidad y crear una 
+                    empresa.
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default class SWP extends React.Component {
                 </div>
                 <div className={'col-xs-6 col-sm-3 ' + styles.beakerPeople}>
                   <Animation src="../../assets/imgs/expert.png" 
-                    frames={16} width={1984} height={250} id="expert" interval={10}/>
+                    frames={16} width={1984} height={250} id="expert" interval={520}/>
                   <span>Experto</span>
                 </div>
               </div>

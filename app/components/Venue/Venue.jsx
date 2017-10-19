@@ -77,7 +77,7 @@ export default class Venue extends React.Component {
             <div className={'col-xs-12 col-sm-6 col-lg-4 center-xs row ' + styles.desc}>
               <h2>Centro de Negocios Pachuca</h2>
               <div className="col-xs-12 col-sm-8 center-xs">
-                Es la sede donde se realizará el SWPachuca, dentro del mismo
+                Es la sede donde se realizará el <b>SWPachuca</b>, dentro del mismo
                 hay espacio para que todos los participantes trabajen, convivan
                 e incluso duerman y aprovechar al máximo la experiencia del
                 evento.
