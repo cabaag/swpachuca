@@ -1,27 +1,27 @@
 let days = [{
   "title": "Viernes, 17 de Nov.",
   "activities": [{
-    "hour": "4:00 pm",
+    "hour": "6:00 pm",
     "title": "Registro",
     "description": "Registro de participantes, no se te olviden de llevar tu boleto impreso o digital."
   }, {
-    "hour": "5:00 pm",
+    "hour": "7:00 pm",
     "title": "Bienvenida y networking",
     "description": "Networking, conoce a tus mentores y posibles socios fundadores."
   }, {
-    "hour": "6:30 pm",
+    "hour": "8:00 pm",
     "title": "Inicio de los Pitches",
     "description": "Tiempo para dar a conocer tu pitch a otros."
   }, {
-    "hour": "7:30 pm",
+    "hour": "8:30 pm",
     "title": "Votación",
     "description": "Vota las mejores ideas."
   }, {
-    "hour": "8:00 pm",
+    "hour": "9:00 pm",
     "title": "¡Haz equipo!",
     "description": "¡Únete con quien tengan la misma visión que tu!"
   }, {
-    "hour": "9:00 pm",
+    "hour": "9:30 pm",
     "title": "Cena",
     "description": "Cena, compartir ideas, practicar pitch, conocer a los demás."
   }, {

@@ -42,11 +42,11 @@ const platinumPartners = [{
 }, {
   img: '../../assets/partners/platinum/tapai.png',
   name: 'Tapai',
-  url: 'https://www.facebook.com/tapai.cow'
+  url: 'http://tapai.com.mx/'
 }, {
   img: '../../assets/partners/platinum/yunop.png',
   name: 'Yunop',
-  url: 'https://www.facebook.com/Yunop.im'
+  url: 'http://yunop.com.mx/'
 }]
 
 // Gold
@@ -89,7 +89,7 @@ export default class Partners extends React.Component {
             Si deseas ser patrocinador del SWPachuca, por favor 
             comunicate al siguiente correo:&nbsp;
             <b className={styles.email}>
-              <a href='mailto:kevindeclemente93@gmail.com' target='_blank'>kevindeclemente93@gmail.com</a>
+              <a href='mailto:pachucasw@gmail.com' target='_blank'>pachucasw@gmail.com</a>
             </b>
           </div>
         </div>

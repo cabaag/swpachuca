@@ -25,7 +25,7 @@ const links = [{
   }, {
     title: 'Patrocinadores',
     link: '#partners'
-  }, 
+  },
   {
     title: 'Participar',
     link: '#tickets'
@@ -39,7 +39,7 @@ let _day = _hour * 24;
 
 export default class Inicio extends React.Component {
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       days: null,
@@ -52,7 +52,7 @@ export default class Inicio extends React.Component {
   }
 
   componentDidMount() {
-    
+
     let timer = setInterval(this.showRemaining, 1000);
   }
 
@@ -92,11 +92,29 @@ export default class Inicio extends React.Component {
         </div>
         <div className={styles.front}>
           <div className="row center-xs middle-xs col-xs-12" style={{minHeight: 500, height: '100%'}}>
-            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+            <div style={{width: 400}}>
               <img src="../../assets/imgs/tgsw.png" alt="SWPachuca"/>
             </div>
-            <div id="countdown" className={"col-xs-12 row center-xs " + styles.countdown}>
-              <h2>Faltan {this.state.days} días y {this.state.hours}:{this.state.minutes}:{this.state.seconds} horas </h2>
+            <div id="countdown" className={"col-xs-12 row center-xs " + styles.countdownWrapper}>
+              FALTAN
+              <div className={styles.countdown}>
+                <div className={styles.wrapper}>
+                  <div className={styles.up}>{this.state.days}</div>
+                  <div className={styles.down}>d</div>
+                </div>
+                <div className={styles.wrapper}>
+                  <div className={styles.up}>{this.state.hours}</div>
+                  <div className={styles.down}>h</div>
+                </div>
+                <div className={styles.wrapper}>
+                  <div className={styles.up}>{this.state.minutes}</div>
+                  <div className={styles.down}>m</div>
+                </div>
+                <div className={styles.wrapper}>
+                  <div className={styles.up}>{this.state.seconds}</div>
+                  <div className={styles.down}>s</div>
+                </div>
+              </div>
             </div>
             <div className="col-xs-12 row center-xs">
               {
