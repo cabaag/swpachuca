@@ -28,6 +28,7 @@ const globalPartners = [{
 // Platinum
 import '../../assets/partners/platinum/gruvel.svg';
 import '../../assets/partners/platinum/stickergiant.svg';
+import '../../assets/partners/platinum/cnp.svg';
 import '../../assets/partners/platinum/tapai.png';
 import '../../assets/partners/platinum/yunop.png';
 
@@ -47,6 +48,10 @@ const platinumPartners = [{
   img: '../../assets/partners/platinum/yunop.png',
   name: 'Yunop',
   url: 'http://yunop.com.mx/'
+}, {
+  img: '../../assets/partners/platinum/cnp.svg',
+  name: 'Centro de Negocios Pachuca',
+  url: 'https://www.centropachuca.com'
 }]
 
 // Gold
