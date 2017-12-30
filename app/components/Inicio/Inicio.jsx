@@ -6,7 +6,6 @@ import {
 } from 'material-ui';
 
 import '../../assets/imgs/tgsw.png';
-import '../../assets/imgs/TGSW_2017.png';
 
 import Facebook from 'mui-icons/fontawesome/facebook';
 import MessengerPlugin from 'react-messenger-plugin';
@@ -46,14 +45,14 @@ export default class Inicio extends React.Component {
       hours: null,
       minutes: null,
       seconds: null,
-      end: new Date('11/17/2017 12:00 PM')
+      end: new Date('03/16/2018 6:00 PM'),
+      timer: null
     }
     this.showRemaining = this.showRemaining.bind(this);
   }
 
   componentDidMount() {
-
-    let timer = setInterval(this.showRemaining, 1000);
+    this.state.timer = setInterval(this.showRemaining, 1000);
   }
 
   handleScrollTo(hash) {
@@ -66,7 +65,7 @@ export default class Inicio extends React.Component {
     let now = new Date();
     let distance = this.state.end - now;
     if (distance < 0) {
-      clearInterval(timer);
+      clearInterval(this.state.timer);
       document.getElementById('countdown').innerHTML = '¡ES HORA DE EMPRENDER!';
       return;
     }
@@ -74,7 +73,10 @@ export default class Inicio extends React.Component {
     let hours = Math.floor((distance % _day) / _hour);
     let minutes = Math.floor((distance % _hour) / _minute);
     let seconds = Math.floor((distance % _minute) / _second);
-
+    console.log(days);
+    console.log(hours);
+    console.log(days);
+    
     this.setState({
       days: days,
       hours: hours,
@@ -136,9 +138,6 @@ export default class Inicio extends React.Component {
             <div className="row col-xs-12 center-xs end-sm middle-xs">
               <div className={styles.messenger}>
                 <MessengerPlugin appId="130192394386861" pageId="343339826125934" color="blue" size="xlarge" type="message-us"/>
-              </div>
-              <div>
-                <img className={styles.tgsw} src="../../assets/imgs/TGSW_2017.png" alt="Techstars Global Startup Weekend 2017" />
               </div>
             </div>
           </div>

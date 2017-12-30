@@ -1,7 +1,7 @@
 {
   "name": "swpachuca",
   "version": "0.0.0",
-  "description": "Startup Weekend Pachuca 2017",
+  "description": "Startup Weekend Pachuca 2018",
   "license": "MIT",
   "config": {
     "buildDir": "./build",

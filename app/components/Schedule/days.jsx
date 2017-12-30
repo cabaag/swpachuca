@@ -1,5 +1,5 @@
 let days = [{
-  "title": "Viernes, 17 de Nov.",
+  "title": "Viernes, 16 de Marzo",
   "activities": [{
     "hour": "6:00 pm",
     "title": "Registro",
@@ -30,7 +30,7 @@ let days = [{
     "description": "Comencemos a formar equipos. Busca a las personas que te ayudarán a hacer tu StartUp realidad durante todo el fin de semana. Puedes quedarte y trabajar tan tarde como el venue lo permita."
   }]
 }, {
-  "title": "Sabado, 18 de Nov.",
+  "title": "Sabado, 17 de Marzo",
   "activities": [{
     "hour": "9:00 am",
     "title": "Desayuno",
@@ -62,7 +62,7 @@ let days = [{
     "description": "Se termina el día. Puedes quedarte y trabajar tan tarde como el venue lo permita."
   }]
 }, {
-  "title": "Domingo, 19 de Nov.",
+  "title": "Domingo, 18 de Marzo",
   "activities": [{
     "hour": "9:00 am",
     "title": "Desayuno",
@@ -88,7 +88,7 @@ let days = [{
   }, {
     "hour": "7:00 pm",
     "title": "Premiación",
-    "description": "Los jueces deciden quien gano el SWP 2017 y se procede a la premiación."
+    "description": "Los jueces deciden quien gano el SWP 2018 y se procede a la premiación."
   }, {
     "hour": "7:30 pm",
     "title": "Despedida",

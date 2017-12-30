@@ -60,21 +60,6 @@ export default class SWP extends React.Component {
                   <span>Experto</span>
                 </div>
               </div>
-              <div className={"col-xs-12 center-xs " + styles.title} style={{textAlign: 'center', marginTop: 40}}>
-                Techstars Global Startup Weekend
-              </div>
-              <div className="row center-xs">
-                <div className={'col-xs-12 col-sm-10 col-md-8 col-lg-6 ' + styles.descriptionWrapper}>
-                  <div className={styles.wrapper}></div>
-                  <div className={styles.description}>
-                    Este año es especial para la comunidad de <span className={styles.sw}> Startup Weekend </span>,
-                    ya que contamos con el orgullo de ser parte de un evento a nivel global, el 
-                    <span className={styles.sw}> Techstars Global Startup Weekend </span>, el cual se trata de 
-                    varios Startup Wekeend realizados en la misma temporada al rededor del mundo, teniendo así
-                    diferentes comunidades compitiendo al mismo tiempo.
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
